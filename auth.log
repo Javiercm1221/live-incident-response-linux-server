@@ -1,0 +1,1046 @@
+Jun 21 19:04:11 4geeks-server useradd[784]: new group: name=sysadmin, GID=1000
+Jun 21 19:04:11 4geeks-server useradd[784]: new user: name=sysadmin, UID=1000, GID=1000, home=/home/sysadmin, shell=/bin/bash, from=none
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to group 'adm'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to group 'cdrom'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to group 'sudo'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to group 'dip'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to group 'plugdev'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to group 'lxd'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to shadow group 'adm'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to shadow group 'cdrom'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to shadow group 'sudo'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to shadow group 'dip'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to shadow group 'plugdev'
+Jun 21 19:04:11 4geeks-server useradd[784]: add 'sysadmin' to shadow group 'lxd'
+Jun 21 19:04:11 4geeks-server systemd-logind[834]: New seat seat0.
+Jun 21 19:04:11 4geeks-server systemd-logind[834]: Watching system buttons on /dev/input/event0 (Power Button)
+Jun 21 19:04:11 4geeks-server systemd-logind[834]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jun 21 19:04:11 4geeks-server systemd-logind[834]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jun 21 19:04:11 4geeks-server sshd[958]: Server listening on 0.0.0.0 port 22.
+Jun 21 19:04:11 4geeks-server sshd[958]: Server listening on :: port 22.
+Jun 21 19:04:20 4geeks-server useradd[1318]: new user: name=lxd, UID=998, GID=100, home=/var/snap/lxd/common/lxd, shell=/bin/false, from=none
+Jun 21 19:04:27 4geeks-server sshd[958]: Received signal 15; terminating.
+Jun 21 19:04:27 4geeks-server sshd[1632]: Server listening on 0.0.0.0 port 22.
+Jun 21 19:04:27 4geeks-server sshd[1632]: Server listening on :: port 22.
+Jun 21 19:05:06 4geeks-server login[901]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jun 21 19:05:06 4geeks-server systemd-logind[834]: New session 1 of user sysadmin.
+Jun 21 19:05:06 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jun 21 19:17:01 4geeks-server CRON[1901]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 21 19:17:01 4geeks-server CRON[1901]: pam_unix(cron:session): session closed for user root
+Jun 21 19:36:14 4geeks-server su: pam_unix(su:auth): authentication failure; logname=sysadmin uid=1000 euid=0 tty=tty1 ruser=sysadmin rhost=  user=root
+Jun 21 19:36:16 4geeks-server su: FAILED SU (to root) sysadmin on tty1
+Jun 21 19:36:53 4geeks-server su: pam_unix(su:auth): authentication failure; logname=sysadmin uid=1000 euid=0 tty=tty1 ruser=sysadmin rhost=  user=root
+Jun 21 19:36:56 4geeks-server su: FAILED SU (to root) sysadmin on tty1
+Jun 21 19:38:19 4geeks-server sshd[2001]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.50  user=root
+Jun 21 19:38:20 4geeks-server sshd[2001]: Failed password for root from 192.168.1.50 port 40230 ssh2
+Jun 21 19:38:26 4geeks-server sshd[2001]: Connection closed by authenticating user root 192.168.1.50 port 40230 [preauth]
+Jun 21 19:38:47 4geeks-server sshd[2011]: Accepted password for sysadmin from 192.168.1.50 port 47936 ssh2
+Jun 21 19:38:47 4geeks-server sshd[2011]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Jun 21 19:38:47 4geeks-server systemd-logind[834]: New session 4 of user sysadmin.
+Jun 21 19:38:48 4geeks-server sshd[2106]: Received disconnect from 192.168.1.50 port 47936:11: disconnected by user
+Jun 21 19:38:48 4geeks-server sshd[2106]: Disconnected from user sysadmin 192.168.1.50 port 47936
+Jun 21 19:38:48 4geeks-server sshd[2011]: pam_unix(sshd:session): session closed for user sysadmin
+Jun 21 19:38:48 4geeks-server systemd-logind[834]: Session 4 logged out. Waiting for processes to exit.
+Jun 21 19:38:48 4geeks-server systemd-logind[834]: Removed session 4.
+Jun 21 19:43:51 4geeks-server unix_chkpwd[2151]: password check failed for user (sysadmin)
+Jun 21 19:43:51 4geeks-server chpasswd[2149]: pam_unix(chpasswd:chauthtok): authentication failure; logname= uid=1000 euid=1000 tty= ruser= rhost=  user=sysadmin
+Jun 21 19:43:52 4geeks-server chpasswd[2155]: pam_unix(chpasswd:chauthtok): user "reports" does not exist in /etc/passwd
+Jun 21 19:43:52 4geeks-server polkitd(authority=local): Registered Authentication Agent for unix-process:2156:240161 (system bus name :1.21 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jun 21 19:44:18 4geeks-server polkit-agent-helper-1[2161]: pam_unix(polkit-1:auth): conversation failed
+Jun 21 19:44:18 4geeks-server polkit-agent-helper-1[2161]: pam_unix(polkit-1:auth): auth could not identify password for [sysadmin]
+Jun 21 19:44:18 4geeks-server polkitd(authority=local): Unregistered Authentication Agent for unix-process:2156:240161 (system bus name :1.21, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Jun 21 19:44:18 4geeks-server polkitd(authority=local): Operator of unix-process:2156:240161 FAILED to authenticate to gain authorization for action org.freedesktop.systemd1.manage-unit-files for system-bus-name::1.22 [<unknown>] (owned by unix-user:sysadmin)
+Jun 21 19:44:18 4geeks-server polkitd(authority=local): Registered Authentication Agent for unix-process:2165:242669 (system bus name :1.23 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jun 21 19:44:43 4geeks-server polkit-agent-helper-1[2170]: pam_unix(polkit-1:auth): conversation failed
+Jun 21 19:44:43 4geeks-server polkit-agent-helper-1[2170]: pam_unix(polkit-1:auth): auth could not identify password for [sysadmin]
+Jun 21 19:44:43 4geeks-server polkitd(authority=local): Unregistered Authentication Agent for unix-process:2165:242669 (system bus name :1.23, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Jun 21 19:44:43 4geeks-server polkitd(authority=local): Operator of unix-process:2165:242669 FAILED to authenticate to gain authorization for action org.freedesktop.systemd1.manage-unit-files for system-bus-name::1.24 [<unknown>] (owned by unix-user:sysadmin)
+Jun 21 19:44:43 4geeks-server polkitd(authority=local): Registered Authentication Agent for unix-process:2186:245241 (system bus name :1.25 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jun 21 19:45:08 4geeks-server polkitd(authority=local): Unregistered Authentication Agent for unix-process:2186:245241 (system bus name :1.25, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Jun 21 19:45:08 4geeks-server polkit-agent-helper-1[2191]: pam_unix(polkit-1:auth): conversation failed
+Jun 21 19:45:08 4geeks-server polkit-agent-helper-1[2191]: pam_unix(polkit-1:auth): auth could not identify password for [sysadmin]
+Jun 21 19:45:08 4geeks-server polkitd(authority=local): Operator of unix-process:2186:245241 FAILED to authenticate to gain authorization for action org.freedesktop.systemd1.manage-unit-files for system-bus-name::1.26 [<unknown>] (owned by unix-user:sysadmin)
+Jun 21 19:45:53 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 21 19:45:53 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 19:45:59 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 19:46:31 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt install apache2 vsftpd ufw
+Jun 21 19:46:31 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 19:46:44 4geeks-server groupadd[3168]: group added to /etc/group: name=ssl-cert, GID=118
+Jun 21 19:46:44 4geeks-server groupadd[3168]: group added to /etc/gshadow: name=ssl-cert
+Jun 21 19:46:44 4geeks-server groupadd[3168]: new group: name=ssl-cert, GID=118
+Jun 21 19:46:45 4geeks-server groupadd[3201]: group added to /etc/group: name=ftp, GID=119
+Jun 21 19:46:45 4geeks-server groupadd[3201]: group added to /etc/gshadow: name=ftp
+Jun 21 19:46:45 4geeks-server groupadd[3201]: new group: name=ftp, GID=119
+Jun 21 19:46:45 4geeks-server useradd[3207]: new user: name=ftp, UID=114, GID=119, home=/srv/ftp, shell=/usr/sbin/nologin, from=none
+Jun 21 19:46:45 4geeks-server usermod[3215]: change user 'ftp' password
+Jun 21 19:46:45 4geeks-server chage[3222]: changed password expiry for ftp
+Jun 21 19:46:45 4geeks-server chfn[3226]: changed user 'ftp' information
+Jun 21 19:47:03 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 19:47:27 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt install cron curl net-tools -y
+Jun 21 19:47:27 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 19:47:32 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 19:48:40 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/mkdir -p /opt/scripts
+Jun 21 19:48:40 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 19:48:40 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 19:49:14 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/nano /opt/scripts/logrotate.sh
+Jun 21 19:49:14 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 19:50:40 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 19:51:08 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chmod +x /opt/scripts/logrotate.sh
+Jun 21 19:51:08 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 19:51:08 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 19:53:07 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee /etc/cron.d/logrotate
+Jun 21 19:53:07 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 19:53:08 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 19:54:52 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/sbin/adduser reports
+Jun 21 19:54:52 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 19:54:52 4geeks-server groupadd[4640]: group added to /etc/group: name=reports, GID=1001
+Jun 21 19:54:52 4geeks-server groupadd[4640]: group added to /etc/gshadow: name=reports
+Jun 21 19:54:52 4geeks-server groupadd[4640]: new group: name=reports, GID=1001
+Jun 21 19:54:52 4geeks-server useradd[4646]: new user: name=reports, UID=1001, GID=1001, home=/home/reports, shell=/bin/bash, from=/dev/tty1
+Jun 21 19:55:16 4geeks-server passwd[4658]: pam_unix(passwd:chauthtok): password changed for reports
+Jun 21 19:55:32 4geeks-server chfn[4661]: changed user 'reports' information
+Jun 21 19:55:34 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:01:12 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/var/www/html ; USER=root ; COMMAND=/usr/bin/tee /var/www/html/index.html
+Jun 21 20:01:12 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:01:12 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:03:16 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/var/www/html ; USER=root ; COMMAND=/usr/bin/systemctl enable apache2 --now
+Jun 21 20:03:16 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:03:19 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:03:47 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/var/www/html ; USER=root ; COMMAND=/usr/bin/systemctl enable vsftpd --now
+Jun 21 20:03:47 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:03:49 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:04:16 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/var/www/html ; USER=root ; COMMAND=/usr/sbin/ufw allow 22
+Jun 21 20:04:16 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:04:16 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:04:24 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/var/www/html ; USER=root ; COMMAND=/usr/sbin/ufw allow 80
+Jun 21 20:04:24 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:04:24 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:04:28 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/var/www/html ; USER=root ; COMMAND=/usr/sbin/ufw allow 21
+Jun 21 20:04:28 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:04:28 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:04:36 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/var/www/html ; USER=root ; COMMAND=/usr/sbin/ufw enable
+Jun 21 20:04:36 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:04:36 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:13:40 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/wget https://packages.wazuh.com/4.7/wazuh-install.sh
+Jun 21 20:13:40 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:13:40 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:13:53 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/chmod +x wazuh-install.sh
+Jun 21 20:13:53 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:13:53 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:14:19 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=./wazuh-install.sh --agent
+Jun 21 20:14:19 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:14:19 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:15:55 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl enable --now wazuh-agent
+Jun 21 20:15:55 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:15:55 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:17:01 4geeks-server CRON[5311]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 21 20:17:01 4geeks-server CRON[5311]: pam_unix(cron:session): session closed for user root
+Jun 21 20:18:23 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/chmod +x wazuh-install.sh
+Jun 21 20:18:23 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:18:23 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:18:34 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=./wazuh-install.sh --agent
+Jun 21 20:18:34 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:18:35 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 21 20:22:31 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/shutdown now
+Jun 21 20:22:32 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 21 20:22:32 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 12:55:30 4geeks-server sshd[814]: Server listening on 0.0.0.0 port 22.
+Jun 23 12:55:30 4geeks-server sshd[814]: Server listening on :: port 22.
+Jun 23 12:55:30 4geeks-server systemd-logind[759]: New seat seat0.
+Jun 23 12:55:30 4geeks-server systemd-logind[759]: Watching system buttons on /dev/input/event0 (Power Button)
+Jun 23 12:55:30 4geeks-server systemd-logind[759]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jun 23 12:55:30 4geeks-server systemd-logind[759]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jun 23 12:55:49 4geeks-server login[787]: pam_unix(login:auth): check pass; user unknown
+Jun 23 12:55:49 4geeks-server login[787]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+Jun 23 12:55:51 4geeks-server login[787]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Jun 23 12:57:12 4geeks-server login[1050]: pam_unix(login:auth): check pass; user unknown
+Jun 23 12:57:12 4geeks-server login[1050]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+Jun 23 12:57:15 4geeks-server login[1050]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Jun 23 12:57:33 4geeks-server login[1050]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jun 23 12:57:33 4geeks-server systemd-logind[759]: New session 1 of user sysadmin.
+Jun 23 12:57:33 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jun 23 12:58:34 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt-key add -
+Jun 23 12:58:34 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 12:58:34 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:00:38 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/keyrings/wazuh.gpg
+Jun 23 13:00:38 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:00:38 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:01:58 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/mkdir /etc/apt/keyrings
+Jun 23 13:01:58 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:01:58 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:02:09 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/keyrings/wazuh.gpg
+Jun 23 13:02:09 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:02:09 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:04:52 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/sources.list.d/wazuh.list
+Jun 23 13:04:52 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:04:52 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:05:12 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 23 13:05:12 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:05:16 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:05:44 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 23 13:05:44 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:05:47 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:06:36 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 23 13:06:36 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:06:44 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:14:22 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/rm -f /etc/apt/keyrings/wazuh.gpg
+Jun 23 13:14:22 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:14:22 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:14:32 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/mkdir /etc/apt/keyrings
+Jun 23 13:14:32 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:14:32 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:16:37 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/keyrings/wazuh.gpg
+Jun 23 13:16:37 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:16:37 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:17:01 4geeks-server CRON[2201]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 23 13:17:01 4geeks-server CRON[2201]: pam_unix(cron:session): session closed for user root
+Jun 23 13:17:15 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/chmod 644 /etc/apt/keyrings/wazuh.gpg
+Jun 23 13:17:15 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:17:15 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:17:34 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/sources.list.d/wazuh.list
+Jun 23 13:17:34 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:17:34 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:17:45 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 23 13:17:45 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:17:54 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:18:27 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt install wazuh-agent -y
+Jun 23 13:18:27 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:18:32 4geeks-server groupadd[2860]: group added to /etc/group: name=wazuh, GID=120
+Jun 23 13:18:32 4geeks-server groupadd[2860]: group added to /etc/gshadow: name=wazuh
+Jun 23 13:18:32 4geeks-server groupadd[2860]: new group: name=wazuh, GID=120
+Jun 23 13:18:32 4geeks-server useradd[2868]: new user: name=wazuh, UID=115, GID=120, home=/var/ossec, shell=/sbin/nologin, from=/dev/pts/0
+Jun 23 13:18:32 4geeks-server usermod[2876]: change user 'wazuh' password
+Jun 23 13:18:32 4geeks-server chage[2883]: changed password expiry for wazuh
+Jun 23 13:18:37 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:18:54 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl status wazuh-agent
+Jun 23 13:18:54 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:18:54 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:20:05 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl enable wazuh-agent
+Jun 23 13:20:05 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:20:06 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:20:15 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl start wazuh-agent
+Jun 23 13:20:15 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:20:15 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:20:53 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl status wazuh-agent.service
+Jun 23 13:20:53 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:21:31 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:21:39 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl enable wazuh-agent.service
+Jun 23 13:21:39 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:21:40 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:21:48 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl start wazuh-agent.service
+Jun 23 13:21:48 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:21:48 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:23:09 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl stop wazuh-agent.service
+Jun 23 13:23:09 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:23:09 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:23:30 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt remove wazuh-agent -y
+Jun 23 13:23:30 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:23:34 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:24:00 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/rm -rf /var/ossec
+Jun 23 13:24:00 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:24:00 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:24:52 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/rm -f /etc/apt/sources.list.d/wazuh.list
+Jun 23 13:24:52 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:24:52 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:25:12 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/rm -f /etc/apt/keyrings/wazuh.gpg
+Jun 23 13:25:12 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:25:12 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:26:20 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/keyrings/wazuh.gpg
+Jun 23 13:26:20 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:26:20 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:27:03 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/sources.list.d/wazuh.list
+Jun 23 13:27:03 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:27:03 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:27:17 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 23 13:27:17 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:27:26 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:27:48 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt install wazuh-agent -y
+Jun 23 13:27:48 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:27:56 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:29:10 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl enable --now wazuh-agent.service
+Jun 23 13:29:10 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:29:10 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:29:19 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl enable --now wazuh-agent
+Jun 23 13:29:19 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:29:20 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:32:32 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/nano /var/ossec/etc/ossec.conf
+Jun 23 13:32:32 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:35:47 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:36:15 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl restart wazuh-agent.service
+Jun 23 13:36:15 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:36:22 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:36:59 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl status wazuh-agent.service
+Jun 23 13:36:59 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 13:37:04 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 13:39:54 4geeks-server login[1050]: pam_unix(login:session): session closed for user sysadmin
+Jun 23 13:39:54 4geeks-server systemd-logind[759]: Session 1 logged out. Waiting for processes to exit.
+Jun 23 13:39:54 4geeks-server systemd-logind[759]: Removed session 1.
+Jun 23 14:05:21 4geeks-server login[7415]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jun 23 14:05:21 4geeks-server systemd-logind[759]: New session 4 of user sysadmin.
+Jun 23 14:05:21 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jun 23 14:07:19 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee /home/reports/.note
+Jun 23 14:07:19 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:07:19 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:07:43 4geeks-server login[7415]: pam_unix(login:session): session closed for user sysadmin
+Jun 23 14:07:43 4geeks-server systemd-logind[759]: Session 4 logged out. Waiting for processes to exit.
+Jun 23 14:07:43 4geeks-server systemd-logind[759]: Removed session 4.
+Jun 23 14:07:54 4geeks-server login[7749]: pam_unix(login:session): session opened for user reports by LOGIN(uid=0)
+Jun 23 14:07:54 4geeks-server systemd-logind[759]: New session 6 of user reports.
+Jun 23 14:07:54 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user reports by (uid=0)
+Jun 23 14:07:58 4geeks-server login[7749]: pam_unix(login:session): session closed for user reports
+Jun 23 14:07:58 4geeks-server systemd-logind[759]: Session 6 logged out. Waiting for processes to exit.
+Jun 23 14:07:58 4geeks-server systemd-logind[759]: Removed session 6.
+Jun 23 14:08:12 4geeks-server login[7881]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jun 23 14:08:12 4geeks-server systemd-logind[759]: New session 8 of user sysadmin.
+Jun 23 14:08:12 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jun 23 14:09:01 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/mkdir -p /opt/.archive
+Jun 23 14:09:01 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:09:01 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:09:58 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee /opt/.archive/credentials.txt
+Jun 23 14:09:58 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:09:58 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:10:41 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chmod 644 /opt/.archive/credentials.txt
+Jun 23 14:10:41 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:10:41 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:12:12 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee /home/reports/.bash_history
+Jun 23 14:12:12 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:12:12 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:13:00 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chown reports:reports /home/reports/.bash_history
+Jun 23 14:13:00 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:13:00 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:17:01 4geeks-server CRON[8075]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 23 14:17:01 4geeks-server CRON[8075]: pam_unix(cron:session): session closed for user root
+Jun 23 14:18:18 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee -a /home/reports/.bash_history
+Jun 23 14:18:18 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:18:18 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:18:50 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee -a /home/reports/.bash_history
+Jun 23 14:18:50 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:18:50 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:19:27 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee -a /home/reports/.bash_history
+Jun 23 14:19:27 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:19:27 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:19:54 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee -a /home/reports/.bash_history
+Jun 23 14:19:54 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:19:54 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:20:30 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chown reports:reports /home/reports/.bash_history
+Jun 23 14:20:30 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:20:30 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:23:18 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/touch /home/reports/install.sh
+Jun 23 14:23:18 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:23:18 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:23:36 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/nano /home/reports/install.sh
+Jun 23 14:23:36 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:28:02 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:28:35 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/touch /home/reports/backup.log
+Jun 23 14:28:35 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:28:35 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:28:51 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/nano /home/reports/backup.log
+Jun 23 14:28:51 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:30:40 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:31:29 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chown reports:reports /home/reports/install.sh /home/reports/backup.log
+Jun 23 14:31:29 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:31:29 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:36:53 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/nano /home/reports/chat.txt
+Jun 23 14:36:53 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:40:35 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:41:08 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chown reports:reports /home/reports/chat.txt
+Jun 23 14:41:08 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 14:41:08 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 14:43:35 4geeks-server login[7881]: pam_unix(login:session): session closed for user sysadmin
+Jun 23 14:43:35 4geeks-server systemd-logind[759]: Session 8 logged out. Waiting for processes to exit.
+Jun 23 14:43:35 4geeks-server systemd-logind[759]: Removed session 8.
+Jun 23 14:50:29 4geeks-server sshd[819]: Server listening on 0.0.0.0 port 22.
+Jun 23 14:50:29 4geeks-server sshd[819]: Server listening on :: port 22.
+Jun 23 14:50:29 4geeks-server systemd-logind[755]: New seat seat0.
+Jun 23 14:50:29 4geeks-server systemd-logind[755]: Watching system buttons on /dev/input/event0 (Power Button)
+Jun 23 14:50:29 4geeks-server systemd-logind[755]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jun 23 14:50:29 4geeks-server systemd-logind[755]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jun 23 15:01:33 4geeks-server login[788]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=sysadmin
+Jun 23 15:01:35 4geeks-server login[788]: FAILED LOGIN (1) on '/dev/tty1' FOR 'sysadmin', Authentication failure
+Jun 23 15:01:55 4geeks-server login[788]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jun 23 15:01:55 4geeks-server systemd-logind[755]: New session 1 of user sysadmin.
+Jun 23 15:01:55 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jun 23 15:02:15 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/bin/bash
+Jun 23 15:02:15 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 15:02:47 4geeks-server useradd[1899]: new group: name=hacker, GID=1002
+Jun 23 15:02:47 4geeks-server useradd[1899]: new user: name=hacker, UID=1002, GID=1002, home=/home/hacker, shell=/bin/bash, from=/dev/tty1
+Jun 23 15:03:53 4geeks-server passwd[1910]: pam_unix(passwd:chauthtok): password changed for hacker
+Jun 23 15:15:01 4geeks-server CRON[2006]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 23 15:15:01 4geeks-server CRON[2006]: pam_unix(cron:session): session closed for user root
+Jun 23 15:17:01 4geeks-server CRON[2027]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 23 15:17:01 4geeks-server CRON[2027]: pam_unix(cron:session): session closed for user root
+Jun 23 15:23:17 4geeks-server sshd[786]: Server listening on 0.0.0.0 port 22.
+Jun 23 15:23:17 4geeks-server sshd[786]: Server listening on :: port 22.
+Jun 23 15:23:17 4geeks-server systemd-logind[721]: New seat seat0.
+Jun 23 15:23:17 4geeks-server systemd-logind[721]: Watching system buttons on /dev/input/event0 (Power Button)
+Jun 23 15:23:17 4geeks-server systemd-logind[721]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jun 23 15:23:17 4geeks-server systemd-logind[721]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jun 23 15:24:18 4geeks-server login[759]: pam_unix(login:auth): check pass; user unknown
+Jun 23 15:24:18 4geeks-server login[759]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+Jun 23 15:24:22 4geeks-server login[759]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Jun 23 15:24:47 4geeks-server login[759]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jun 23 15:24:47 4geeks-server systemd-logind[721]: New session 1 of user sysadmin.
+Jun 23 15:24:47 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jun 23 15:26:47 4geeks-server sshd[1736]: Invalid user test from 192.168.1.103 port 58760
+Jun 23 15:26:50 4geeks-server sshd[1736]: pam_unix(sshd:auth): check pass; user unknown
+Jun 23 15:26:50 4geeks-server sshd[1736]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.103 
+Jun 23 15:26:52 4geeks-server sshd[1736]: Failed password for invalid user test from 192.168.1.103 port 58760 ssh2
+Jun 23 15:26:59 4geeks-server sshd[1736]: pam_unix(sshd:auth): check pass; user unknown
+Jun 23 15:27:01 4geeks-server sshd[1736]: Failed password for invalid user test from 192.168.1.103 port 58760 ssh2
+Jun 23 15:27:05 4geeks-server sshd[1736]: pam_unix(sshd:auth): check pass; user unknown
+Jun 23 15:27:07 4geeks-server sshd[1736]: Failed password for invalid user test from 192.168.1.103 port 58760 ssh2
+Jun 23 15:27:08 4geeks-server sshd[1736]: Connection closed by invalid user test 192.168.1.103 port 58760 [preauth]
+Jun 23 15:27:08 4geeks-server sshd[1736]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.103 
+Jun 23 15:27:24 4geeks-server sshd[1747]: Invalid user admin from 192.168.1.103 port 49542
+Jun 23 15:27:27 4geeks-server sshd[1747]: pam_unix(sshd:auth): check pass; user unknown
+Jun 23 15:27:27 4geeks-server sshd[1747]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.103 
+Jun 23 15:27:28 4geeks-server sshd[1747]: Failed password for invalid user admin from 192.168.1.103 port 49542 ssh2
+Jun 23 15:27:30 4geeks-server sshd[1747]: pam_unix(sshd:auth): check pass; user unknown
+Jun 23 15:27:32 4geeks-server sshd[1747]: Failed password for invalid user admin from 192.168.1.103 port 49542 ssh2
+Jun 23 15:27:35 4geeks-server sshd[1747]: pam_unix(sshd:auth): check pass; user unknown
+Jun 23 15:27:37 4geeks-server sshd[1747]: Failed password for invalid user admin from 192.168.1.103 port 49542 ssh2
+Jun 23 15:27:39 4geeks-server sshd[1747]: Connection closed by invalid user admin 192.168.1.103 port 49542 [preauth]
+Jun 23 15:27:39 4geeks-server sshd[1747]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.103 
+Jun 23 15:28:30 4geeks-server sshd[1769]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.103  user=hacker
+Jun 23 15:28:33 4geeks-server sshd[1769]: Failed password for hacker from 192.168.1.103 port 44272 ssh2
+Jun 23 15:28:40 4geeks-server sshd[1769]: Failed password for hacker from 192.168.1.103 port 44272 ssh2
+Jun 23 15:29:04 4geeks-server sshd[1769]: Connection closed by authenticating user hacker 192.168.1.103 port 44272 [preauth]
+Jun 23 15:29:04 4geeks-server sshd[1769]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.103  user=hacker
+Jun 23 15:29:14 4geeks-server sshd[1797]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.103  user=root
+Jun 23 15:29:15 4geeks-server sshd[1797]: Failed password for root from 192.168.1.103 port 47014 ssh2
+Jun 23 15:29:21 4geeks-server sshd[1797]: Failed password for root from 192.168.1.103 port 47014 ssh2
+Jun 23 15:29:49 4geeks-server sshd[1797]: Connection closed by authenticating user root 192.168.1.103 port 47014 [preauth]
+Jun 23 15:29:49 4geeks-server sshd[1797]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.103  user=root
+Jun 23 15:30:01 4geeks-server CRON[1815]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 23 15:30:05 4geeks-server CRON[1815]: pam_unix(cron:session): session closed for user root
+Jun 23 16:40:13 4geeks-server sshd[782]: Server listening on 0.0.0.0 port 22.
+Jun 23 16:40:13 4geeks-server sshd[782]: Server listening on :: port 22.
+Jun 23 16:40:13 4geeks-server systemd-logind[734]: New seat seat0.
+Jun 23 16:40:13 4geeks-server systemd-logind[734]: Watching system buttons on /dev/input/event0 (Power Button)
+Jun 23 16:40:13 4geeks-server systemd-logind[734]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jun 23 16:40:13 4geeks-server systemd-logind[734]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jun 23 16:40:54 4geeks-server login[769]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jun 23 16:40:54 4geeks-server systemd-logind[734]: New session 1 of user sysadmin.
+Jun 23 16:40:54 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jun 23 16:41:47 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/mkdir -p /var/backups/.logs
+Jun 23 16:41:47 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 16:41:47 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 16:43:04 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee /var/backups/.logs/creds.txt
+Jun 23 16:43:04 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 16:43:04 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 16:43:31 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chmod 644 /var/backups/.logs/creds.txt
+Jun 23 16:43:31 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 16:43:31 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 16:45:01 4geeks-server CRON[1751]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 23 16:45:03 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/tee -a /home/sysadmin/.bash_history
+Jun 23 16:45:03 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jun 23 16:45:03 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jun 23 16:45:04 4geeks-server CRON[1751]: pam_unix(cron:session): session closed for user root
+Jun 23 16:45:20 4geeks-server systemd-logind[734]: Power key pressed.
+Jun 23 16:45:20 4geeks-server systemd-logind[734]: Powering Off...
+Jun 23 16:45:20 4geeks-server systemd-logind[734]: System is powering down.
+Jul 24 16:43:24 4geeks-server systemd-logind[737]: New seat seat0.
+Jul 24 16:43:24 4geeks-server systemd-logind[737]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 24 16:43:24 4geeks-server systemd-logind[737]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jul 24 16:43:24 4geeks-server systemd-logind[737]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jul 24 16:43:24 4geeks-server sshd[863]: Server listening on 0.0.0.0 port 22.
+Jul 24 16:43:24 4geeks-server sshd[863]: Server listening on :: port 22.
+Jul 24 16:43:50 4geeks-server agetty[779]: tty1: invalid character 0x1b in login name
+Jul 24 16:44:37 4geeks-server login[1588]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jul 24 16:44:37 4geeks-server systemd-logind[737]: New session 1 of user sysadmin.
+Jul 24 16:44:37 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jul 24 16:45:01 4geeks-server CRON[1743]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 16:46:22 4geeks-server sshd[762]: Server listening on 0.0.0.0 port 22.
+Jul 24 16:46:22 4geeks-server sshd[762]: Server listening on :: port 22.
+Jul 24 16:46:23 4geeks-server systemd-logind[724]: New seat seat0.
+Jul 24 16:46:23 4geeks-server systemd-logind[724]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 24 16:46:23 4geeks-server systemd-logind[724]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jul 24 16:46:23 4geeks-server systemd-logind[724]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jul 24 16:46:44 4geeks-server login[777]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jul 24 16:46:44 4geeks-server systemd-logind[724]: New session 1 of user sysadmin.
+Jul 24 16:46:44 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jul 24 16:51:38 4geeks-server systemd-logind[724]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 24 16:51:38 4geeks-server systemd-logind[724]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jul 24 16:51:38 4geeks-server systemd-logind[724]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jul 24 17:00:01 4geeks-server CRON[2955]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 17:02:12 4geeks-server CRON[2955]: pam_unix(cron:session): session closed for user root
+Jul 24 17:15:01 4geeks-server CRON[3027]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 17:17:01 4geeks-server CRON[3043]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 17:17:01 4geeks-server CRON[3043]: pam_unix(cron:session): session closed for user root
+Jul 24 17:17:12 4geeks-server CRON[3027]: pam_unix(cron:session): session closed for user root
+Jul 24 17:22:10 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt update
+Jul 24 17:22:10 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 24 17:22:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 24 17:22:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt install htop -y
+Jul 24 17:22:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 24 17:22:22 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 24 17:30:01 4geeks-server CRON[3725]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 17:32:11 4geeks-server CRON[3725]: pam_unix(cron:session): session closed for user root
+Jul 24 17:45:01 4geeks-server CRON[3762]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 17:47:12 4geeks-server CRON[3762]: pam_unix(cron:session): session closed for user root
+Jul 24 18:00:01 4geeks-server CRON[3811]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 18:02:11 4geeks-server CRON[3811]: pam_unix(cron:session): session closed for user root
+Jul 24 18:15:01 4geeks-server CRON[3847]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 18:17:01 4geeks-server CRON[3855]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 18:17:01 4geeks-server CRON[3855]: pam_unix(cron:session): session closed for user root
+Jul 24 18:17:12 4geeks-server CRON[3847]: pam_unix(cron:session): session closed for user root
+Jul 24 18:30:01 4geeks-server CRON[3898]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 18:32:11 4geeks-server CRON[3898]: pam_unix(cron:session): session closed for user root
+Jul 24 20:00:01 4geeks-server CRON[4584]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 20:01:29 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/ls -al /var/spool/cron/crontabs/
+Jul 24 20:01:29 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 24 20:01:29 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 24 20:02:12 4geeks-server CRON[4584]: pam_unix(cron:session): session closed for user root
+Jul 24 20:15:01 4geeks-server CRON[4627]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 20:17:01 4geeks-server CRON[4644]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 24 20:17:01 4geeks-server CRON[4644]: pam_unix(cron:session): session closed for user root
+Jul 24 20:17:11 4geeks-server CRON[4627]: pam_unix(cron:session): session closed for user root
+Jul 24 20:30:01 4geeks-server CRON[4679]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 25 15:34:23 4geeks-server systemd-logind[743]: New seat seat0.
+Jul 25 15:34:23 4geeks-server systemd-logind[743]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 25 15:34:23 4geeks-server systemd-logind[743]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jul 25 15:34:23 4geeks-server systemd-logind[743]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jul 25 15:34:55 4geeks-server login[790]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jul 25 15:34:55 4geeks-server systemd-logind[743]: New session 1 of user sysadmin.
+Jul 25 15:34:55 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jul 25 15:45:01 4geeks-server CRON[1837]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 25 16:02:31 4geeks-server CRON[1837]: pam_unix(cron:session): session closed for user root
+Jul 25 16:30:01 4geeks-server CRON[3643]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 25 16:32:11 4geeks-server CRON[3643]: pam_unix(cron:session): session closed for user root
+Jul 25 16:45:01 4geeks-server CRON[3706]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 25 16:47:12 4geeks-server CRON[3706]: pam_unix(cron:session): session closed for user root
+Jul 25 16:56:33 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/sbin/iptables -L -n -v
+Jul 25 16:56:33 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 25 16:56:33 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 25 17:00:01 4geeks-server CRON[3756]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 25 17:02:12 4geeks-server CRON[3756]: pam_unix(cron:session): session closed for user root
+Jul 25 17:05:29 4geeks-server systemd-logind[743]: Power key pressed.
+Jul 25 17:05:29 4geeks-server systemd-logind[743]: Powering Off...
+Jul 25 17:05:29 4geeks-server systemd-logind[743]: System is powering down.
+Jul 26 10:53:28 4geeks-server systemd-logind[748]: New seat seat0.
+Jul 26 10:53:28 4geeks-server systemd-logind[748]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 26 10:53:28 4geeks-server systemd-logind[748]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jul 26 10:53:28 4geeks-server systemd-logind[748]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jul 26 10:57:02 4geeks-server login[764]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jul 26 10:57:02 4geeks-server systemd-logind[748]: New session 1 of user sysadmin.
+Jul 26 10:57:02 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jul 26 11:00:01 4geeks-server CRON[1903]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 11:02:11 4geeks-server CRON[1903]: pam_unix(cron:session): session closed for user root
+Jul 26 11:15:01 4geeks-server CRON[1968]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 11:17:01 4geeks-server CRON[1975]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 11:17:01 4geeks-server CRON[1975]: pam_unix(cron:session): session closed for user root
+Jul 26 11:17:12 4geeks-server CRON[1968]: pam_unix(cron:session): session closed for user root
+Jul 26 11:30:01 4geeks-server CRON[2014]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 11:32:11 4geeks-server CRON[2014]: pam_unix(cron:session): session closed for user root
+Jul 26 11:45:01 4geeks-server CRON[2186]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 11:47:11 4geeks-server CRON[2186]: pam_unix(cron:session): session closed for user root
+Jul 26 15:00:01 4geeks-server CRON[2237]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 15:02:12 4geeks-server CRON[2237]: pam_unix(cron:session): session closed for user root
+Jul 26 15:15:01 4geeks-server CRON[2269]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 15:17:01 4geeks-server CRON[2918]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 15:17:01 4geeks-server CRON[2918]: pam_unix(cron:session): session closed for user root
+Jul 26 15:17:11 4geeks-server CRON[2269]: pam_unix(cron:session): session closed for user root
+Jul 26 15:30:01 4geeks-server CRON[2957]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 15:30:22 4geeks-server sshd[2965]: error: kex_exchange_identification: Connection closed by remote host
+Jul 26 15:30:32 4geeks-server sshd[2987]: error: Protocol major versions differ: 2 vs. 1
+Jul 26 15:30:32 4geeks-server sshd[2989]: error: Protocol major versions differ: 2 vs. 1
+Jul 26 15:30:32 4geeks-server vsftpd: pam_unix(vsftpd:auth): check pass; user unknown
+Jul 26 15:30:32 4geeks-server vsftpd: pam_unix(vsftpd:auth): check pass; user unknown
+Jul 26 15:30:32 4geeks-server vsftpd: pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty=ftp ruser=anonymous rhost=::ffff:192.168.32.11 
+Jul 26 15:30:32 4geeks-server vsftpd: pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty=ftp ruser=anonymous rhost=::ffff:192.168.32.11 
+Jul 26 15:30:32 4geeks-server vsftpd: pam_unix(vsftpd:auth): check pass; user unknown
+Jul 26 15:30:32 4geeks-server vsftpd: pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty=ftp ruser=anonymous rhost=::ffff:192.168.32.11 
+Jul 26 15:30:32 4geeks-server sshd[2995]: Unable to negotiate with 192.168.32.11 port 49152: no matching host key type found. Their offer: ssh-dss [preauth]
+Jul 26 15:30:33 4geeks-server sshd[2997]: Connection closed by 192.168.32.11 port 49160 [preauth]
+Jul 26 15:30:33 4geeks-server sshd[2999]: Connection closed by 192.168.32.11 port 39616 [preauth]
+Jul 26 15:30:33 4geeks-server sshd[3001]: Unable to negotiate with 192.168.32.11 port 39630: no matching host key type found. Their offer: ecdsa-sha2-nistp384 [preauth]
+Jul 26 15:30:34 4geeks-server sshd[3003]: Unable to negotiate with 192.168.32.11 port 39638: no matching host key type found. Their offer: ecdsa-sha2-nistp521 [preauth]
+Jul 26 15:30:34 4geeks-server sshd[3005]: Connection closed by 192.168.32.11 port 39648 [preauth]
+Jul 26 15:32:12 4geeks-server CRON[2957]: pam_unix(cron:session): session closed for user root
+Jul 26 15:45:01 4geeks-server CRON[3045]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 15:47:11 4geeks-server CRON[3045]: pam_unix(cron:session): session closed for user root
+Jul 26 15:47:30 4geeks-server sshd[3076]: error: kex_exchange_identification: banner line contains invalid characters
+Jul 26 15:47:33 4geeks-server sshd[3089]: Connection closed by 192.168.32.11 port 47422 [preauth]
+Jul 26 15:47:39 4geeks-server vsftpd: pam_unix(vsftpd:auth): check pass; user unknown
+Jul 26 15:47:39 4geeks-server vsftpd: pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty=ftp ruser=X:) rhost=::ffff:192.168.32.11 
+Jul 26 16:00:01 4geeks-server CRON[3126]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 16:00:19 4geeks-server CRON[3126]: pam_unix(cron:session): session closed for user root
+Jul 26 16:15:01 4geeks-server CRON[3158]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 16:15:35 4geeks-server CRON[3158]: pam_unix(cron:session): session closed for user root
+Jul 26 16:17:01 4geeks-server CRON[3177]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 16:17:01 4geeks-server CRON[3177]: pam_unix(cron:session): session closed for user root
+Jul 26 16:30:01 4geeks-server CRON[3208]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 16:30:20 4geeks-server CRON[3208]: pam_unix(cron:session): session closed for user root
+Jul 26 16:45:01 4geeks-server CRON[3241]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 16:45:35 4geeks-server CRON[3241]: pam_unix(cron:session): session closed for user root
+Jul 26 17:00:01 4geeks-server CRON[3282]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 26 17:00:20 4geeks-server CRON[3282]: pam_unix(cron:session): session closed for user root
+Jul 28 07:31:43 4geeks-server sshd[819]: Server listening on 0.0.0.0 port 22.
+Jul 28 07:31:43 4geeks-server sshd[819]: Server listening on :: port 22.
+Jul 28 07:31:43 4geeks-server systemd-logind[735]: New seat seat0.
+Jul 28 07:31:43 4geeks-server systemd-logind[735]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 28 07:31:43 4geeks-server systemd-logind[735]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jul 28 07:31:43 4geeks-server systemd-logind[735]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jul 28 07:33:16 4geeks-server login[755]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jul 28 07:33:16 4geeks-server systemd-logind[735]: New session 1 of user sysadmin.
+Jul 28 07:33:16 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jul 28 07:45:01 4geeks-server CRON[1839]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 07:47:11 4geeks-server CRON[1839]: pam_unix(cron:session): session closed for user root
+Jul 28 08:00:01 4geeks-server CRON[1903]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 08:02:11 4geeks-server CRON[1903]: pam_unix(cron:session): session closed for user root
+Jul 28 10:00:53 4geeks-server sshd[822]: Server listening on 0.0.0.0 port 22.
+Jul 28 10:00:53 4geeks-server sshd[822]: Server listening on :: port 22.
+Jul 28 10:00:53 4geeks-server systemd-logind[762]: New seat seat0.
+Jul 28 10:00:53 4geeks-server systemd-logind[762]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 28 10:00:53 4geeks-server systemd-logind[762]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jul 28 10:00:53 4geeks-server systemd-logind[762]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jul 28 10:02:21 4geeks-server login[788]: pam_unix(login:auth): check pass; user unknown
+Jul 28 10:02:21 4geeks-server login[788]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+Jul 28 10:02:24 4geeks-server login[788]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Jul 28 10:02:41 4geeks-server login[788]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jul 28 10:02:41 4geeks-server systemd-logind[762]: New session 1 of user sysadmin.
+Jul 28 10:02:41 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jul 28 10:15:01 4geeks-server CRON[1856]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 10:17:01 4geeks-server CRON[1867]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 10:17:01 4geeks-server CRON[1867]: pam_unix(cron:session): session closed for user root
+Jul 28 10:17:11 4geeks-server CRON[1856]: pam_unix(cron:session): session closed for user root
+Jul 28 10:23:06 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/find / -name payload
+Jul 28 10:23:06 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 10:23:32 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 10:23:39 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/find / -name payload
+Jul 28 10:23:39 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 10:23:39 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 10:24:24 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/find / -type f -mmin -60
+Jul 28 10:24:24 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 10:25:01 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 10:25:07 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/find / -name payload
+Jul 28 10:25:07 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 10:25:07 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 10:28:23 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/lsof -i -nP
+Jul 28 10:28:23 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 10:28:23 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 10:30:01 4geeks-server CRON[1918]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 10:32:12 4geeks-server CRON[1918]: pam_unix(cron:session): session closed for user root
+Jul 28 10:36:49 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/find / -iname *payload*
+Jul 28 10:36:49 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 10:36:50 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 10:45:01 4geeks-server CRON[1968]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 10:47:11 4geeks-server CRON[1968]: pam_unix(cron:session): session closed for user root
+Jul 28 16:54:33 4geeks-server sshd[780]: Server listening on 0.0.0.0 port 22.
+Jul 28 16:54:33 4geeks-server sshd[780]: Server listening on :: port 22.
+Jul 28 16:54:33 4geeks-server systemd-logind[749]: New seat seat0.
+Jul 28 16:54:33 4geeks-server systemd-logind[749]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 28 16:54:33 4geeks-server systemd-logind[749]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jul 28 16:54:33 4geeks-server systemd-logind[749]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jul 28 17:00:02 4geeks-server CRON[1660]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 17:02:11 4geeks-server CRON[1660]: pam_unix(cron:session): session closed for user root
+Jul 28 17:02:27 4geeks-server login[793]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jul 28 17:02:27 4geeks-server systemd-logind[749]: New session 2 of user sysadmin.
+Jul 28 17:02:27 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jul 28 17:06:29 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/ls -la /etc/cron.d /etc/cron.daily /etc/cron.hourly /etc/cron.monthly /etc/cron.weekly
+Jul 28 17:06:29 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 17:06:29 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 17:15:01 4geeks-server CRON[1890]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 17:17:01 4geeks-server CRON[1898]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 17:17:01 4geeks-server CRON[1898]: pam_unix(cron:session): session closed for user root
+Jul 28 17:17:12 4geeks-server CRON[1890]: pam_unix(cron:session): session closed for user root
+Jul 28 17:24:33 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/cat /etc/sudoers
+Jul 28 17:24:33 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 17:24:33 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 17:26:38 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/ls -la /etc/sudoers.d/
+Jul 28 17:26:38 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 17:26:38 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 17:27:57 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/cat /etc/sudoers.d/README
+Jul 28 17:27:57 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 17:27:57 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 17:30:01 4geeks-server CRON[1941]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 17:32:11 4geeks-server CRON[1941]: pam_unix(cron:session): session closed for user root
+Jul 28 17:40:36 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/su reports
+Jul 28 17:40:36 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 17:40:36 4geeks-server su: (to reports) sysadmin on tty1
+Jul 28 17:40:36 4geeks-server su: pam_unix(su:session): session opened for user reports by sysadmin(uid=0)
+Jul 28 17:41:55 4geeks-server sudo:  reports : user NOT in sudoers ; TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/cat .bash_history
+Jul 28 17:45:01 4geeks-server CRON[2032]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 17:47:10 4geeks-server CRON[2032]: pam_unix(cron:session): session closed for user root
+Jul 28 18:00:01 4geeks-server CRON[2065]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 18:02:11 4geeks-server CRON[2065]: pam_unix(cron:session): session closed for user root
+Jul 28 18:15:01 4geeks-server CRON[2108]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 18:17:01 4geeks-server CRON[2116]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 18:17:02 4geeks-server CRON[2116]: pam_unix(cron:session): session closed for user root
+Jul 28 18:17:13 4geeks-server CRON[2108]: pam_unix(cron:session): session closed for user root
+Jul 28 18:22:30 4geeks-server sudo:  reports : user NOT in sudoers ; TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/su sysadmin
+Jul 28 18:22:49 4geeks-server su: (to sysadmin) sysadmin on tty1
+Jul 28 18:22:49 4geeks-server su: pam_unix(su:session): session opened for user sysadmin by sysadmin(uid=1001)
+Jul 28 18:30:01 4geeks-server CRON[2167]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 18:32:12 4geeks-server CRON[2167]: pam_unix(cron:session): session closed for user root
+Jul 28 18:45:01 4geeks-server CRON[2212]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 18:47:11 4geeks-server CRON[2212]: pam_unix(cron:session): session closed for user root
+Jul 28 18:58:37 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/sudo /tmp/avml /tmp/memdump.lime
+Jul 28 18:58:37 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 18:58:37 4geeks-server sudo:     root : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/tmp/avml /tmp/memdump.lime
+Jul 28 18:58:37 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 18:59:11 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 18:59:11 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 19:00:01 4geeks-server CRON[2321]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 19:02:12 4geeks-server CRON[2321]: pam_unix(cron:session): session closed for user root
+Jul 28 19:11:46 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/cat /tmp/memdump.lime
+Jul 28 19:11:46 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 19:11:51 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 19:14:34 4geeks-server sshd[2371]: Accepted password for sysadmin from 192.168.32.11 port 43788 ssh2
+Jul 28 19:14:34 4geeks-server sshd[2371]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Jul 28 19:14:34 4geeks-server systemd-logind[749]: New session 14 of user sysadmin.
+Jul 28 19:14:35 4geeks-server sshd[2495]: Received disconnect from 192.168.32.11 port 43788:11: disconnected by user
+Jul 28 19:14:35 4geeks-server sshd[2495]: Disconnected from user sysadmin 192.168.32.11 port 43788
+Jul 28 19:14:35 4geeks-server sshd[2371]: pam_unix(sshd:session): session closed for user sysadmin
+Jul 28 19:14:35 4geeks-server systemd-logind[749]: Session 14 logged out. Waiting for processes to exit.
+Jul 28 19:14:35 4geeks-server systemd-logind[749]: Removed session 14.
+Jul 28 19:15:01 4geeks-server CRON[2500]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 19:17:01 4geeks-server CRON[2507]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 28 19:17:01 4geeks-server CRON[2507]: pam_unix(cron:session): session closed for user root
+Jul 28 19:17:11 4geeks-server CRON[2500]: pam_unix(cron:session): session closed for user root
+Jul 28 19:22:50 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chmod 644 /tmp/memdump.lime
+Jul 28 19:22:50 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 19:22:50 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 19:23:16 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chown sysadmin:syadmin /tmp/memdump.lime
+Jul 28 19:23:16 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 19:23:16 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 19:23:41 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/chown sysadmin:Sys4dm1n2024 /tmp/memdump.lime
+Jul 28 19:23:41 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Jul 28 19:23:41 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Jul 28 19:24:05 4geeks-server sshd[2528]: Accepted password for sysadmin from 192.168.32.11 port 35984 ssh2
+Jul 28 19:24:05 4geeks-server sshd[2528]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Jul 28 19:24:05 4geeks-server systemd-logind[749]: New session 17 of user sysadmin.
+Jul 28 19:25:24 4geeks-server sshd[2616]: Received disconnect from 192.168.32.11 port 35984:11: disconnected by user
+Jul 28 19:25:24 4geeks-server sshd[2616]: Disconnected from user sysadmin 192.168.32.11 port 35984
+Jul 28 19:25:24 4geeks-server sshd[2528]: pam_unix(sshd:session): session closed for user sysadmin
+Jul 28 19:25:24 4geeks-server systemd-logind[749]: Session 17 logged out. Waiting for processes to exit.
+Jul 28 19:25:24 4geeks-server systemd-logind[749]: Removed session 17.
+Jul 28 19:30:01 4geeks-server CRON[2643]: pam_unix(cron:session): session opened for user root by (uid=0)
+                                                                                               Jul 29 07:27:51 4geeks-server sshd[795]: Server listening on 0.0.0.0 port 22.
+Jul 29 07:27:51 4geeks-server sshd[795]: Server listening on :: port 22.
+Jul 29 07:27:51 4geeks-server systemd-logind[734]: New seat seat0.
+Jul 29 07:27:51 4geeks-server systemd-logind[734]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 29 07:27:51 4geeks-server systemd-logind[734]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jul 29 07:27:51 4geeks-server systemd-logind[734]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jul 29 07:28:12 4geeks-server login[768]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Jul 29 07:28:12 4geeks-server systemd-logind[734]: New session 1 of user sysadmin.
+Jul 29 07:28:12 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Jul 29 07:30:01 4geeks-server CRON[1764]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 29 07:32:12 4geeks-server CRON[1764]: pam_unix(cron:session): session closed for user root
+Jul 29 07:45:01 4geeks-server CRON[1839]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 29 07:48:12 4geeks-server CRON[1839]: pam_unix(cron:session): session closed for user root
+Aug  1 07:29:56 4geeks-server sshd[803]: Server listening on 0.0.0.0 port 22.
+Aug  1 07:29:56 4geeks-server sshd[803]: Server listening on :: port 22.
+Aug  1 07:29:57 4geeks-server systemd-logind[743]: New seat seat0.
+Aug  1 07:29:57 4geeks-server systemd-logind[743]: Watching system buttons on /dev/input/event0 (Power Button)
+Aug  1 07:29:57 4geeks-server systemd-logind[743]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Aug  1 07:29:57 4geeks-server systemd-logind[743]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Aug  1 07:30:01 4geeks-server CRON[1098]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 07:32:15 4geeks-server CRON[1098]: pam_unix(cron:session): session closed for user root
+Aug  1 07:36:01 4geeks-server login[790]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Aug  1 07:36:01 4geeks-server systemd-logind[743]: New session 2 of user sysadmin.
+Aug  1 07:36:01 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Aug  1 07:42:22 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/find / -type f -mtime -7
+Aug  1 07:42:22 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 07:43:22 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 07:45:01 4geeks-server CRON[1862]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 07:47:10 4geeks-server CRON[1862]: pam_unix(cron:session): session closed for user root
+Aug  1 07:55:50 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/grep -rEi curl|wget|nc|bash|python|socat|useradd|chmod|chown /home /var /tmp
+Aug  1 07:55:50 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 07:56:45 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 07:57:02 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/ss -tulpan
+Aug  1 07:57:02 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 07:57:02 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 08:00:01 4geeks-server CRON[1904]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 08:02:11 4geeks-server CRON[1904]: pam_unix(cron:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u root -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u daemon -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u bin -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u sys -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u sync -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u games -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u man -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u lp -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u mail -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u news -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u uucp -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u proxy -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u www-data -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u backup -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u list -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u irc -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u gnats -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u nobody -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u systemd-network -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u systemd-resolve -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u systemd-timesync -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u messagebus -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u syslog -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u _apt -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u tss -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u uuidd -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u tcpdump -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u landscape -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u pollinate -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u fwupd-refresh -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u usbmux -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u sshd -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u systemd-coredump -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u sysadmin -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u lxd -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u ftp -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:21 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u reports -l
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:21 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:22 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u wazuh -l
+Aug  1 10:11:22 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:22 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:11:22 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/crontab -u hacker -l
+Aug  1 10:11:22 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 10:11:22 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 10:15:01 4geeks-server CRON[2066]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 10:17:01 4geeks-server CRON[2075]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 10:17:01 4geeks-server CRON[2075]: pam_unix(cron:session): session closed for user root
+Aug  1 10:17:12 4geeks-server CRON[2066]: pam_unix(cron:session): session closed for user root
+Aug  1 10:30:01 4geeks-server CRON[2104]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 10:32:11 4geeks-server CRON[2104]: pam_unix(cron:session): session closed for user root
+Aug  1 10:45:01 4geeks-server CRON[2147]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 10:45:01 4geeks-server CRON[2147]: pam_unix(cron:session): session closed for user root
+Aug  1 15:15:01 4geeks-server CRON[2937]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 15:17:01 4geeks-server CRON[2946]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 15:17:01 4geeks-server CRON[2946]: pam_unix(cron:session): session closed for user root
+Aug  1 15:17:11 4geeks-server CRON[2937]: pam_unix(cron:session): session closed for user root
+Aug  1 15:21:13 4geeks-server sshd[798]: Server listening on 0.0.0.0 port 22.
+Aug  1 15:21:13 4geeks-server sshd[798]: Server listening on :: port 22.
+Aug  1 15:21:13 4geeks-server systemd-logind[735]: New seat seat0.
+Aug  1 15:21:13 4geeks-server systemd-logind[735]: Watching system buttons on /dev/input/event0 (Power Button)
+Aug  1 15:21:13 4geeks-server systemd-logind[735]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Aug  1 15:21:13 4geeks-server systemd-logind[735]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Aug  1 15:22:34 4geeks-server login[754]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Aug  1 15:22:34 4geeks-server systemd-logind[735]: New session 1 of user sysadmin.
+Aug  1 15:22:34 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Aug  1 15:26:48 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/sh -c for user in $(ls /home); do echo "==== Historial de $user ===="; cat /home/$user/.bash_history 2>/dev/null; echo ""; done
+Aug  1 15:26:48 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 15:26:48 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 15:30:01 4geeks-server CRON[1812]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 15:31:52 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/find / -type -mtime -7
+Aug  1 15:31:52 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 15:31:52 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 15:32:12 4geeks-server CRON[1812]: pam_unix(cron:session): session closed for user root
+Aug  1 15:34:52 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/grep -rEi curl|wget|nc|bash|python|socat|useradd|chmod|chown /home /var /tmp
+Aug  1 15:34:52 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 15:34:58 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 15:42:43 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/find /dev/shm /run /lib/systemd /home -type f -exec file {} ;
+Aug  1 15:42:43 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 15:42:47 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 15:45:01 4geeks-server CRON[2825]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 15:47:11 4geeks-server CRON[2825]: pam_unix(cron:session): session closed for user root
+Aug  1 15:51:37 4geeks-server sshd[2845]: Accepted password for sysadmin from 172.20.10.5 port 34566 ssh2
+Aug  1 15:51:37 4geeks-server sshd[2845]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Aug  1 15:51:37 4geeks-server systemd-logind[735]: New session 5 of user sysadmin.
+Aug  1 15:51:38 4geeks-server sshd[2956]: Received disconnect from 172.20.10.5 port 34566:11: disconnected by user
+Aug  1 15:51:38 4geeks-server sshd[2956]: Disconnected from user sysadmin 172.20.10.5 port 34566
+Aug  1 15:51:38 4geeks-server sshd[2845]: pam_unix(sshd:session): session closed for user sysadmin
+Aug  1 15:51:38 4geeks-server systemd-logind[735]: Session 5 logged out. Waiting for processes to exit.
+Aug  1 15:51:38 4geeks-server systemd-logind[735]: Removed session 5.
+Aug  1 15:51:48 4geeks-server sshd[2958]: Accepted password for sysadmin from 172.20.10.5 port 48344 ssh2
+Aug  1 15:51:48 4geeks-server sshd[2958]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Aug  1 15:51:48 4geeks-server systemd-logind[735]: New session 6 of user sysadmin.
+Aug  1 15:51:48 4geeks-server sshd[3051]: Received disconnect from 172.20.10.5 port 48344:11: disconnected by user
+Aug  1 15:51:48 4geeks-server sshd[3051]: Disconnected from user sysadmin 172.20.10.5 port 48344
+Aug  1 15:51:48 4geeks-server sshd[2958]: pam_unix(sshd:session): session closed for user sysadmin
+Aug  1 15:51:48 4geeks-server systemd-logind[735]: Session 6 logged out. Waiting for processes to exit.
+Aug  1 15:51:48 4geeks-server systemd-logind[735]: Removed session 6.
+Aug  1 15:51:56 4geeks-server sshd[3053]: Accepted password for sysadmin from 172.20.10.5 port 37594 ssh2
+Aug  1 15:51:56 4geeks-server sshd[3053]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Aug  1 15:51:56 4geeks-server systemd-logind[735]: New session 7 of user sysadmin.
+Aug  1 15:51:56 4geeks-server sshd[3151]: Received disconnect from 172.20.10.5 port 37594:11: disconnected by user
+Aug  1 15:51:56 4geeks-server sshd[3151]: Disconnected from user sysadmin 172.20.10.5 port 37594
+Aug  1 15:51:56 4geeks-server sshd[3053]: pam_unix(sshd:session): session closed for user sysadmin
+Aug  1 15:51:56 4geeks-server systemd-logind[735]: Session 7 logged out. Waiting for processes to exit.
+Aug  1 15:51:56 4geeks-server systemd-logind[735]: Removed session 7.
+Aug  1 15:52:04 4geeks-server sshd[3153]: Accepted password for sysadmin from 172.20.10.5 port 53946 ssh2
+Aug  1 15:52:04 4geeks-server sshd[3153]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Aug  1 15:52:04 4geeks-server systemd-logind[735]: New session 8 of user sysadmin.
+Aug  1 15:52:06 4geeks-server sshd[3254]: Received disconnect from 172.20.10.5 port 53946:11: disconnected by user
+Aug  1 15:52:06 4geeks-server sshd[3254]: Disconnected from user sysadmin 172.20.10.5 port 53946
+Aug  1 15:52:06 4geeks-server sshd[3153]: pam_unix(sshd:session): session closed for user sysadmin
+Aug  1 15:52:06 4geeks-server systemd-logind[735]: Session 8 logged out. Waiting for processes to exit.
+Aug  1 15:52:06 4geeks-server systemd-logind[735]: Removed session 8.
+Aug  1 15:52:13 4geeks-server sshd[3256]: Accepted password for sysadmin from 172.20.10.5 port 52602 ssh2
+Aug  1 15:52:13 4geeks-server sshd[3256]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Aug  1 15:52:13 4geeks-server systemd-logind[735]: New session 9 of user sysadmin.
+Aug  1 15:52:13 4geeks-server sshd[3350]: Received disconnect from 172.20.10.5 port 52602:11: disconnected by user
+Aug  1 15:52:13 4geeks-server sshd[3350]: Disconnected from user sysadmin 172.20.10.5 port 52602
+Aug  1 15:52:13 4geeks-server sshd[3256]: pam_unix(sshd:session): session closed for user sysadmin
+Aug  1 15:52:13 4geeks-server systemd-logind[735]: Session 9 logged out. Waiting for processes to exit.
+Aug  1 15:52:13 4geeks-server systemd-logind[735]: Removed session 9.
+Aug  1 16:00:01 4geeks-server CRON[3369]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 16:02:12 4geeks-server CRON[3369]: pam_unix(cron:session): session closed for user root
+Aug  1 16:15:01 4geeks-server CRON[3403]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 16:17:01 4geeks-server CRON[3420]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 16:17:01 4geeks-server CRON[3420]: pam_unix(cron:session): session closed for user root
+Aug  1 16:17:11 4geeks-server CRON[3403]: pam_unix(cron:session): session closed for user root
+Aug  1 16:30:01 4geeks-server CRON[3478]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 16:32:12 4geeks-server CRON[3478]: pam_unix(cron:session): session closed for user root
+Aug  1 16:45:01 4geeks-server CRON[3512]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 16:47:11 4geeks-server CRON[3512]: pam_unix(cron:session): session closed for user root
+Aug  1 16:53:02 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/grep Failed password /var/log/auth.log
+Aug  1 16:53:02 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 16:53:02 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 16:54:01 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/grep Accepted password /var/log/auth.log
+Aug  1 16:54:01 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 16:54:01 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 16:55:36 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/grep COMMAND= /var/log/auth.log
+Aug  1 16:55:36 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 16:55:36 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 16:56:18 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/grep CRON /var/log/syslog
+Aug  1 16:56:18 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 16:56:18 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 17:00:01 4geeks-server CRON[3566]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 17:02:12 4geeks-server CRON[3566]: pam_unix(cron:session): session closed for user root
+Aug  1 17:10:56 4geeks-server sshd[3598]: Accepted password for sysadmin from 172.20.10.5 port 58592 ssh2
+Aug  1 17:10:56 4geeks-server sshd[3598]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Aug  1 17:10:56 4geeks-server systemd-logind[735]: New session 16 of user sysadmin.
+Aug  1 17:10:58 4geeks-server sshd[3702]: Received disconnect from 172.20.10.5 port 58592:11: disconnected by user
+Aug  1 17:10:58 4geeks-server sshd[3702]: Disconnected from user sysadmin 172.20.10.5 port 58592
+Aug  1 17:10:58 4geeks-server sshd[3598]: pam_unix(sshd:session): session closed for user sysadmin
+Aug  1 17:10:58 4geeks-server systemd-logind[735]: Session 16 logged out. Waiting for processes to exit.
+Aug  1 17:10:58 4geeks-server systemd-logind[735]: Removed session 16.
+Aug  1 17:15:01 4geeks-server CRON[3706]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 17:17:01 4geeks-server CRON[3725]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 17:17:01 4geeks-server CRON[3725]: pam_unix(cron:session): session closed for user root
+Aug  1 17:17:11 4geeks-server CRON[3706]: pam_unix(cron:session): session closed for user root
+Aug  1 17:30:01 4geeks-server CRON[3754]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 17:32:12 4geeks-server CRON[3754]: pam_unix(cron:session): session closed for user root
+Aug  1 17:45:01 4geeks-server CRON[3799]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 17:47:12 4geeks-server CRON[3799]: pam_unix(cron:session): session closed for user root
+Aug  1 17:51:53 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/grep -E nc | netcat |ftp |rsync |python3 |perl  /home/reports/.bash_history /home/sysadmin/.bash_history
+Aug  1 17:51:53 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 17:51:53 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 17:52:56 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/bin/apt install acct
+Aug  1 17:52:56 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 17:53:09 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 17:54:30 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/sbin/service acct start
+Aug  1 17:54:30 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  1 17:54:31 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  1 18:00:01 4geeks-server CRON[4368]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 18:02:11 4geeks-server CRON[4368]: pam_unix(cron:session): session closed for user root
+Aug  7 10:52:44 4geeks-server sshd[801]: Server listening on 0.0.0.0 port 22.
+Aug  7 10:52:44 4geeks-server sshd[801]: Server listening on :: port 22.
+Aug  7 10:52:45 4geeks-server systemd-logind[755]: New seat seat0.
+Aug  7 10:52:45 4geeks-server systemd-logind[755]: Watching system buttons on /dev/input/event0 (Power Button)
+Aug  7 10:52:45 4geeks-server systemd-logind[755]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Aug  7 10:52:45 4geeks-server systemd-logind[755]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Aug  7 10:55:12 4geeks-server login[796]: pam_unix(login:session): session opened for user sysadmin by LOGIN(uid=0)
+Aug  7 10:55:12 4geeks-server systemd-logind[755]: New session 1 of user sysadmin.
+Aug  7 10:55:12 4geeks-server systemd: pam_unix(systemd-user:session): session opened for user sysadmin by (uid=0)
+Aug  7 11:00:01 4geeks-server CRON[1830]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  7 11:02:13 4geeks-server CRON[1830]: pam_unix(cron:session): session closed for user root
+Aug  7 11:14:55 4geeks-server sshd[1889]: Accepted password for sysadmin from 172.20.10.5 port 54038 ssh2
+Aug  7 11:14:55 4geeks-server sshd[1889]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Aug  7 11:14:55 4geeks-server systemd-logind[755]: New session 4 of user sysadmin.
+Aug  7 11:14:56 4geeks-server sudo: pam_unix(sudo:auth): conversation failed
+Aug  7 11:14:56 4geeks-server sudo: pam_unix(sudo:auth): auth could not identify password for [sysadmin]
+Aug  7 11:14:56 4geeks-server sshd[1987]: Received disconnect from 172.20.10.5 port 54038:11: disconnected by user
+Aug  7 11:14:56 4geeks-server sshd[1987]: Disconnected from user sysadmin 172.20.10.5 port 54038
+Aug  7 11:14:56 4geeks-server sshd[1889]: pam_unix(sshd:session): session closed for user sysadmin
+Aug  7 11:14:56 4geeks-server systemd-logind[755]: Session 4 logged out. Waiting for processes to exit.
+Aug  7 11:14:56 4geeks-server systemd-logind[755]: Removed session 4.
+Aug  7 11:15:01 4geeks-server CRON[1995]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  7 11:17:01 4geeks-server CRON[2012]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  7 11:17:01 4geeks-server CRON[2012]: pam_unix(cron:session): session closed for user root
+Aug  7 11:17:12 4geeks-server CRON[1995]: pam_unix(cron:session): session closed for user root
+Aug  7 11:21:56 4geeks-server sudo: sysadmin : TTY=tty1 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/usr/sbin/visudo
+Aug  7 11:21:56 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Aug  7 11:23:53 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  7 11:24:18 4geeks-server sshd[2038]: Accepted password for sysadmin from 172.20.10.5 port 43830 ssh2
+Aug  7 11:24:18 4geeks-server sshd[2038]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Aug  7 11:24:18 4geeks-server systemd-logind[755]: New session 7 of user sysadmin.
+Aug  7 11:24:19 4geeks-server sudo: sysadmin : TTY=unknown ; PWD=/home/sysadmin ; USER=root ; COMMAND=/bin/dd if=/dev/sdX bs=4M status=progress
+Aug  7 11:24:19 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug  7 11:24:19 4geeks-server sudo: pam_unix(sudo:session): session closed for user root
+Aug  7 11:24:19 4geeks-server sshd[2124]: Received disconnect from 172.20.10.5 port 43830:11: disconnected by user
+Aug  7 11:24:19 4geeks-server sshd[2124]: Disconnected from user sysadmin 172.20.10.5 port 43830
+Aug  7 11:24:19 4geeks-server sshd[2038]: pam_unix(sshd:session): session closed for user sysadmin
+Aug  7 11:24:19 4geeks-server systemd-logind[755]: Session 7 logged out. Waiting for processes to exit.
+Aug  7 11:24:19 4geeks-server systemd-logind[755]: Removed session 7.
+Aug  7 11:30:01 4geeks-server CRON[2154]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  7 11:32:11 4geeks-server CRON[2154]: pam_unix(cron:session): session closed for user root
+Aug  7 11:32:56 4geeks-server sshd[2164]: Accepted password for sysadmin from 172.20.10.5 port 58710 ssh2
+Aug  7 11:32:56 4geeks-server sshd[2164]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Aug  7 11:32:56 4geeks-server systemd-logind[755]: New session 9 of user sysadmin.
+Aug  7 11:32:57 4geeks-server sudo: sysadmin : TTY=unknown ; PWD=/home/sysadmin ; USER=root ; COMMAND=/bin/dd if=/dev/sda bs=4M status=progress
+Aug  7 11:32:57 4geeks-server sudo: pam_unix(sudo:session): session opened for user root by (uid=0)

